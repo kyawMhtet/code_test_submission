@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Order Submission Form</title>
+
+        <link rel="stylesheet" href="./test.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="form">
+                <h2>Order Submission Form</h2>
+
+                <img id="selectedImage" src="#" alt="Selected Image">
+                <input type="file" id="itemImage"
+                    accept="image/jpeg, image/png" required>
+                <input type="text" id="itemName" placeholder="Item Name"
+                    required>
+                <small class="nameError">
+                    Please Enter Name!
+                </small>
+
+                <input type="text" id="itemQty" placeholder="Item Qty"
+                    required>
+
+                <button onclick="addToCheckOut()">Add To Checkout</button>
+            </div>
+
+            <div id="orderSummary" class="summary">
+
+                <div id="orderDetails">
+
+                </div>
+
+                <div class="final">
+                    <h3>Order Summary</h3>
+                    <p>Total Quantity: <span id="totalQuantity">0</span></p>
+                    <p>Total Price: $<span id="totalPrice">0.00</span></p>
+                </div>
+            </div>
+        </div>
+        <script src="./test.js"></script>
+
+    </body>
+</html>
