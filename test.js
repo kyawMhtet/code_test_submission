@@ -15,7 +15,7 @@ document.getElementById('itemImage').addEventListener('change', function (event)
 let items = [];
 
 const addToCheckOut = () => {
-    console.log('bbb');
+    // console.log('bbb');
     const itemName = document.querySelector('#itemName').value;
     const itemImageInput = document.querySelector('#itemImage');
     const itemImage = itemImageInput.files[0];
